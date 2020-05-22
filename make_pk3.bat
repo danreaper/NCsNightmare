@@ -6,7 +6,7 @@ REM *******************************************************
 
 
 
-set pk3name=CuckDoom
+set pk3name= NC's Nightmare
 
 
 
