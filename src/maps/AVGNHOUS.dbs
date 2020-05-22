@@ -1,0 +1,122 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomUDMF.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP01
+	{
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultfloortexture = "FLAT1";
+		overrideceilheight = false;
+		
+		resources
+		{
+		}
+		defaulttoptexture = "ASHWALL2";
+		overridemiddletexture = false;
+		viewpositionx = 1803.802f;
+		viewpositiony = 2543.912f;
+		viewscale = 0.2624492f;
+		overridefloortexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		
+		grid
+		{
+			background = "";
+			backoffsetx = 0;
+			backoffsety = 0;
+			backscalex = 100;
+			backscaley = 100;
+			backsource = 0;
+			gridsize = 128f;
+		}
+		defaultceiltexture = "F_SKY1";
+		overridebrightness = false;
+		uselongtexturenames = false;
+		useresourcesinreadonlymode = false;
+		overridebottomtexture = false;
+		overridefloorheight = false;
+		overridetoptexture = false;
+		custombrightness = 196;
+		overrideceiltexture = false;
+		defaultwalltexture = "ASHWALL2";
+		defaultbottomtexture = "ASHWALL2";
+		
+		fieldtypes
+		{
+			
+			sidedef
+			{
+				offsetx_mid = 1;
+				offsetx_bottom = 1;
+				scaley_mid = 1;
+				scalex_bottom = 1;
+				scaley_bottom = 1;
+				scalex_mid = 1;
+				offsety_bottom = 1;
+				offsetx_top = 1;
+				offsety_top = 1;
+				offsety_mid = 1;
+				scaley_top = 1;
+				scalex_top = 1;
+			}
+			
+			sector
+			{
+				xpanningfloor = 1;
+				rotationfloor = 1;
+				xscalefloor = 1;
+				yscalefloor = 1;
+				ypanningfloor = 1;
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 1;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				lightcolor = 0;
+				fadecolor = 0;
+				lightceiling = 0;
+				ceilingglowcolor = 0;
+				ceilingglowheight = 1;
+				damagetype = 2;
+				damageamount = 0;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 38;
+				activetab = true;
+			}
+			
+			document2
+			{
+				filename = "C:\\Users\\Daniel\\Desktop\\suckmywe\\src\\maps\\AVGNHOUS.wad\\SNDINFO";
+				hash = 2917557369;
+				resource = "C:\\Users\\Daniel\\Desktop\\suckmywe\\src\\maps\\AVGNHOUS.wad";
+				tabtype = 1;
+				scripttype = 14;
+			}
+		}
+	}
+}

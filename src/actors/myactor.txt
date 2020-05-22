@@ -1,0 +1,153 @@
+Actor MyActor 20000
+{
+	Radius 32
+	Height 32
+	Tag "Custom Actor" // the actor's name in a ZSDF dialogue
+	Scale 0.5
+	MONSTER
+	+FRIENDLY
+	States
+	{
+		Spawn:
+			HEHE A 1 A_Look
+			Loop
+		See:
+			HEHE A 1 A_Chase
+			Loop
+		Death:
+			TNT1 A 1
+			Stop
+	}
+}
+
+Actor Malcolm 20001
+{
+	Radius 32
+	Height 32
+	Tag "Malcolm"
+	Scale 0.3
+	MONSTER
+	+FRIENDLY
+	States
+	{
+		Spawn:
+			MALC A 1 A_Look
+			Loop
+		See:
+			MALC A 1 A_Chase
+			Loop
+		Death:
+			TNT1 A 1
+			Stop
+	}
+}
+
+Actor Skylar : Cacodemon 101
+{
+	Health 50000
+}
+
+Actor Mike : ShotgunGuy 100
+{
+	SeeSound "Matei4"
+	Health 60
+	Deathsound "MateiD"
+	Obituary "You got bandito'd by Mike Matei"
+	States
+	{
+	Spawn:
+		MIKE AB 10 A_Look
+		Loop
+	See:
+		MIKE AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		MIKE E 10 A_FaceTarget
+		MIKE F 10 Bright A_SPosAttackUseAtkSound
+		MIKE E 10
+		Goto See
+	Pain:
+		MIKE G 3
+		MIKE G 3 A_Pain
+		Goto See
+	Death:
+    		MIKE H 5
+    		MIKE I 5 A_Scream
+    		MIKE J 5 A_NoBlocking
+    		MIKE K 5
+    		MIKE L -1
+    		Stop
+  	XDeath:
+    		MIKE M 5
+    		MIKE N 5 A_XScream
+    		MIKE O 5 A_NoBlocking
+    		MIKE PQRST 5
+    		MIKE U -1
+    		Stop
+  	Raise:
+    		MIKE L 5
+    		MIKE KJIH 5
+    		Goto See
+	}
+}
+
+Actor LawnChair 103
+{
+	Radius 32
+	Height 24
+	Scale 0.5
+	States
+	{
+	Spawn:
+		CHAR A 10
+		Loop
+	}
+}
+		
+Actor RCan : Health 104
+{
+XScale 0.25
+YScale 0.25
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.Amount 1
+	Inventory.MaxAmount 200
+	Inventory.PickupMessage "You drank a can of Rolling Rock!"
+	States
+	{
+	Spawn:
+		CAN2 A -1
+		Stop
+	}
+}
+
+Actor Beer : Health 105
+{
+XScale 0.20
+YScale 0.20
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.Amount 10
+	Inventory.MaxAmount 100
+	Inventory.PickupMessage "You downed a bottle of Rolling Rock!"
+	States
+	{
+	Spawn:
+		BEER A -1
+		Stop
+	}
+}	
+
+Actor 6pack: Health 106
+{
+XScale 0.22
+YScale 0.22
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.Amount 100
+	Inventory.MaxAmount 100
+	Inventory.PickupMessage "You chugged a whole six pack of Rolling Rock!"
+	States
+	{
+	Spawn:
+		BEER A -1
+		Stop
+	}
+}	

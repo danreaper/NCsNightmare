@@ -1,0 +1,33 @@
+//===========================================================================
+//
+// MAPINFO
+//
+//===========================================================================
+
+ClearEpisodes
+
+
+Episode "NCHUB"
+{
+	Name = "AVGN"
+	noskillmenu
+	
+}
+
+Map "NCHUB" "Nostalgia Critic Realm"
+{
+	LevelNum = 0
+	music = "d_ncrlm"
+	Next = "AVGNHOUS"
+}
+
+Map "AVGNHOUS" "Nerd's House"
+{
+	LevelNum = 1
+	music = "d_AVGNH"
+}
+Map "WDYLTFLY" "Skylar Boss Fight"
+{
+	LevelNum = 2
+	music = "d_skylar"
+}
